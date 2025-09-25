@@ -1,11 +1,10 @@
 ---
 title: "IEAP-Series02-RStudio"
-output: html_document
 date: "2025-09-25"
 output:
   html_document:
-    df_print:paged
-    code_folding:hide
+    df_print: paged
+    code_folding: hide
     toc: false
     number_sections: true
 ---
@@ -18,17 +17,38 @@ In this series of exercises, you will explore how to compare two groups of data,
 
 Below are some questions to guide your analysis. You can answer them in your notebook, with a short sentence for each question.
 
-    What is a median? A mean?
-    What is a variance? A standard deviation?
-    What is a normal distribution?
-    What is a statistical test?
-    When to use a statistical test?
-    What is a parametric test? A non-parametric test?
-    What are the assumptions of parametric tests?
-    What are the assumptions of non-parametric tests?
-    What is a p-value?
-    What is the risk of error when using a statistical test?
-    What is the difference between a paired and an unpaired test?
+**What is a median? A mean?**
+*The median is the theoretical separation splitting a group of data in two equal parts. A mean (or average) it the total sum of values in a sample divided by the number of values in this sample (Hurley and Tenny, 2023, Mean, StatPearls Publishing).*
+    
+**What is a variance? A standard deviation?**
+*Variance is a measure that quantifies "how closely the dataset is spread around its center"(Wadhwa and Azzam, 2023, Variance, StatPearls Publishing).*
+
+**What is a normal distribution?**
+*We talk about normal distribution when the data set is symmetrically distributed on both side of the mean (https://www.jmp.com/fr/statistics-knowledge-portal/measures-of-central-tendency-and-variability/normal-distribution).*
+
+**What is a statistical test?**
+*A statistical test is a method used to make inferences or draw conclusions about a population based on sample data https://www.sciencedirect.com/topics/social-sciences/statistical-test).*
+    
+**When to use a statistical test?**
+*There are various statistical tests for each situations. We can use statistical tests in order to compare groups, test relationships between variables, asses proportions or frequencies, evaluate changes over time, check for normality or distribution fit, or make predictions and classifications.*
+    
+**What is a parametric test? A non-parametric test?**
+*Parametric test is based on the assumption that the frequency distribution of the characteristic being test follows certain rules (https://www.sciencedirect.com/topics/medicine-and-dentistry/parametric-test). A non-parametric test is a statistical test that does not assume a specific distribution for the data.*
+
+**What are the assumptions of parametric tests?**
+*The main assumptions of parametric tests are: normality, outliers, homogeneity of variance, homoscedasticity, linearity, multicollinearity. (https://resources.nu.edu/statsresources/assumptions).*
+    
+**What are the assumptions of non-parametric tests?**
+*Non-parametric test are use to see if data set are random or independant (https://www.st-andrews.ac.uk/media/ceed/students/mathssupport/non-parametric.pdf).*
+
+**What is a p-value?**
+*A p-value is the probability of obtaining test results at least as extreme as the results actually observed, under the assumption that the null hypothesis is correct(Ferreira and Patino, 2015, What does the P value really mean ?, Jornal Brasileiro de Pneumologia).*
+
+**What is the risk of error when using a statistical test?**
+*We can distinguish two types of errors : Type 1 is when the null hypothesis is rejected when it is true, often called "false positive". Type 2 errors happen if fail to reject the null when the evidence suggested the hypothesis was not true when it actually was true (https://stats.libretexts.org/Bookshelves/Introductory_Statistics/Statistics).*
+    
+**What is the difference between a paired and an unpaired test?**
+*A paired test is a statistical test used when the observations in the two groups are dependent or related, such as repeated measurements on the same subjects. A non‑paired (independent) test is used when the observations in the two groups are independent, meaning the measurements in one group do not influence or correspond to the measurements in the other group" (Wang and al., 2022, Paired or partially paired two-sample tests with unordered samples, Journal of the Royal Statistical Society Series B).*
 
 You can use your favorite LLM, book or web site to answer these questions, but you have to provide at least one reference for each answer (book, article, URL, LLM prompt, etc.).
 
