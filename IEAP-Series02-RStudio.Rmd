@@ -66,10 +66,27 @@ This file contains before/after measurements. The treatment is a rehabilitation 
 
 Before going further, you have to make clear what are the measured variables. What do they measure? What are the units? What are the possible values? What are the expected changes over rehabilitation.
 
-Make a table, with one row per variable, and the following columns:
 
-| Variable | Description | Unit | Possible values | Expected change |
+*This table quantifies the performances values as the time goes by (before and after rehabilitation).* 
+**What do each variables represent ?** *Perf appears to be a heart rate performance metric (in beat per minute) often included between 60 and 200, time indicate the timing of measurement either before or after. We could see a decreasing heart rate after a rehabilitation process.*
 
+| Variable | Description | Unit | Possible values | Expected change|
+|----------|-------------|------|-----------------|----------------|
+|Perf|Performace measured by heartrate|bpm|often between 60 and 200|Decrease after rehabilitation|
+|Time|Timing of measurement|category|"Before" or "after"|N/A|
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(readr)
+library(dplyr)
+library(summarytools)
+
+prepost <- read.csv("data/test_data/PrePost.csv")
+head(prepost)
+
+str(prepost)
+summary(prepost)
+
+
+```
 ### 1.2.2 The analysis
 
 You want to know if the treatment has an effect on one or more of the measured variables.
@@ -105,3 +122,4 @@ This file contains anthropometric and qualitative measurements (1 person per lin
         Do women smoke less?
     From a more general perspective:
         Are there any correlations between variables?
+        
